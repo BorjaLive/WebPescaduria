@@ -1,0 +1,136 @@
+<div class="header" style="position: relative;    z-index: 99;    width: 100%;    height: 210px;    background: url(/img/fondo_header.jpg);    margin: 0 0 0 0;">
+	<div class="main">
+		<div class="logoheader">
+			<div id="logo">
+				<a href="/index.php">
+					<img src="/img/logo.png">
+				</a>
+			</div>
+		</div>
+		<div id="topmenu">
+			<ul id="nav_top" class="sf_menu">
+				<li>
+					<a href="/tienda.php">Tienda Online</a>
+				</li>
+				<li>
+					<a href="/presentacion.php">Presentación</a>
+				</li>
+				<li>
+					<a href="/tablaPrecios.php" target="_blank">Precios</a>
+				</li>
+				<li>
+					<a href="/presentacion.php#gamba">La Gamba</a>
+				</li>
+				<li>
+					<a href="/reportaje.php#videos">Videos</a>
+				</li>
+				<li>
+					<a href="/reportaje.php#fotos">Fotos</a>
+				</li>
+				<li>
+					<a href="/faqs.php">FAQs</a>
+				</li>
+				<li>
+					<a href="/faqs.php#contacto">Contacto</a>
+				</li>
+			</ul>
+		</div>
+		<div class="cart">
+			<div class="moduletable">
+				<h3>Carrito:</h3>
+				<div class="vmCartModule" id="vmCartModule">
+					<div class="minicart">
+						<div class="total_products">
+							<span class="cart_num">
+							<!--<span class="crt-text"><a href="/cesta.php">Tienes 0 articulos</a></span>-->
+							[CESTA]
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="currency">
+			<div id="google_translate_element"></div>
+			<script type="text/javascript">
+			function googleTranslateElementInit() {
+			  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+			}
+			</script>
+			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+		</div>
+		<div class="moduletable_LoginForm">
+			<div class="poping_links">
+				<!--<a href="javascript:;" onclick="boton_mostrarLogin();" id="openLogin">Log in</a><br>
+				<a href="/registrar.php" id="openReg">Crear Cuenta</a>-->
+				[SESION]
+			</div>
+			<div id="login_pop" style="display: none; opacity: 1; visibility: visible;">
+				<form action="[CURRENTFILE]?mod=true" method="post" name="login" id="form-login">
+					<span><label for="yjpop_username">Correo electrónico</label></span>
+					<input id="yjpop_username" type="text" name="email" class="inputbox" alt="username" size="18" style="height: 35px">
+					<span><label for="yjpop_passwd">Contraseña</label></span>
+					<input id="yjpop_passwd" type="password" name="hash" class="inputbox" size="18" alt="password" style="height: 35px">
+					<div class="wrapper">
+						<label for="yjpop_remember">Recuerdame</label>
+						<input id="yjpop_remember" type="checkbox" name="recordar" class="inputbox" value="yes" alt="Remember Me">
+					</div>
+					<input type="submit" name="Submit" class="button" value="Iniciar sesión">
+				</form>
+				<ul class="Forgot">
+					<li><a href="restablecer.php">Restablecer contraseña</a></li>
+				</ul>
+				<a href="javascript:;" onclick="boton_cerrarLogin('login_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			
+			<div id="nosesion_pop" style="display: [NOSESION]; opacity: 1; visibility: visible;">
+				<span class="alerta">Necesitas una cuenta para acceder a esta página.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('nosesion_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			<div id="verificar_pop" style="display: [ERROR1]; opacity: 1; visibility: visible;">
+				<span class="alerta">Debes verificar tu correo mediante el enlace enviado para acceder a tu cuenta.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('verificar_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			<div id="cancelacion_pop" style="display: [ERROR2]; opacity: 1; visibility: visible;">
+				<span class="alerta">Tu cuenta ha sido cancelada. Por correo encontraras los motivos.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('cancelacion_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			<div id="activation_pop" style="display: [ACTIVATE]; opacity: 1; visibility: visible;">
+				<span class="alerta">Tu cuenta ha sido activada.<br>Ya puedes iniciar sesión.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('activation_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			<div id="block_pop" style="display: [BLOQUEO]; opacity: 1; visibility: visible;">
+				<span class="alerta">Esta función está bloqueada.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('block_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			<div id="fallosesion_pop" style="display: [FALLOSEION]; opacity: 1; visibility: visible;">
+				<span class="alerta">Datos de usuario incorectos.<span>
+				<a href="javascript:;" onclick="boton_cerrarLogin('fallosesion_pop');" id="closeLogin">&nbsp;</a>
+			</div>
+			
+		</div>
+		<div class="moduletable-category">
+			<ul class="VMmenu level0 droplist" id="drop">
+				<li id="vm-category-7" class="level0 VmClose">
+					<a href="/tienda.php?categoria=Gambas">Gamba Blanca</a>
+				</li>
+				<li id="vm-category-4" class="level0 VmClose">
+					<a href="/tienda.php?categoria=Cigala">Gamba Roja</a>
+				</li>
+				<li id="vm-category-1" class="level0 VmClose">
+					<a href="/tienda.php?categoria=Cigala">Cigalas</a>
+				</li>
+				<li id="vm-category-5" class="level0 VmClose">
+					<a href="/tienda.php?categoria=Langostino">Langostinos de Trasmallo</a>
+				</li>
+				<li id="vm-category-3" class="level0 VmClose">
+					<a href="/tienda.php?categoria=Carabinero">Carabineros</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	function boton_cerrarLogin(cosa){
+		document.getElementById(cosa).style.display="none";
+	}
+</script>
