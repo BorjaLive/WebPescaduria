@@ -4,11 +4,11 @@ require 'phpmailer/Exception.php';
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 
-$MAIL_sender="tolilisur@gmail.com";
-$MAIL_pass="sonic4419";
-$MAIL_name="Tolili Surero";
-$MAIL_replyMail="tolilinorte@gmail.com";
-$MAIL_replyName="Tolili Noroestero";
+$MAIL_sender="XXXX";
+$MAIL_pass="XXXX";
+$MAIL_name="XXXX";
+$MAIL_replyMail="XXXX";
+$MAIL_replyName="XXXX";
 
 Function enviarCorreo($destinoMail,$destinoNombre,$asunto,$cuerpo,$cuerpoAlternativo,$adjunto){
 	$mail = new PHPMailer;
