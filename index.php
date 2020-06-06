@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -75,7 +75,7 @@
 					}, 4000);
 				}
 			}
-			
+
 			$(window).on("blur focus", function(e){
 				var prevType = $(this).data("prevType");
 				if(prevType != e.type){
@@ -89,7 +89,7 @@
 								carrusel = 0;
 								alternador(true);
 							}
-							
+
 							break;
 					}
 					$(this).data("prevType", e.type);
@@ -106,10 +106,10 @@
 						}
 					}
 			}
-			
-			
+
+
 		</script>
-		
+
 		<!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans" type="text/css" />
 		<link rel="stylesheet" href="http://www.lagambadehuelva.com/modules/mod_yj_pop_login/css/stylesheet.css" type="text/css" />
 		<link rel="stylesheet" href="http://www.lagambadehuelva.com/modules/mod_vm_ajax_search/css/mod_vm_ajax_search.css" type="text/css" />
@@ -125,22 +125,22 @@
 				<div class="main">
 					<div class="box-shadow">
 						<div class="moduletable_slider">
-						
+
 							<!-- Carrusel START -->
 							<div class="slideshowck_slider camera_wrap camera_amber_skin" id="camera_wrap_130" style="width: 1170px; display: block; height: 370px;">
 								<div class="camera_fakehover">
 									<div class="camera_target">
 										<div class="cameraCont">
 											<div id="carrusel1" class="cameraSlide cameraSlide_0 cameracurrent" style="visibility: visible; z-index: 999; display: block;"><!--Cambiame para las imagenes-->
-												<img src="/img/slide1.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;" data-alignment="" data-portrait="" width="1170" height="371">
+												<img src="img/slide1.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;" data-alignment="" data-portrait="" width="1170" height="371">
 												<div class="camerarelative" style="width: 1170px; height: 370px;"></div>
 											</div>
 											<div id="carrusel2" class="cameraSlide cameraSlide_1 cameranext" style="display: none; visibility: visible; z-index: 999; ">
-												<img src="/img/slide2.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;" data-alignment="" data-portrait="" width="1170" height="371">
+												<img src="img/slide2.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;" data-alignment="" data-portrait="" width="1170" height="371">
 												<div class="camerarelative" style="width: 1170px; height: 370px;"></div>
 											</div>
 											<div id="carrusel3" class="cameraSlide cameraSlide_2" style="display: none; visibility: visible; z-index: 999;">
-												<img src="/img/slide3.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;">
+												<img src="img/slide3.jpg" class="imgLoaded" style="visibility: visible; height: 371px; margin-left: 0px; margin-right: 0px; margin-top: -0.5px; position: absolute; width: 1170px;">
 												<div class="camerarelative" style="width: 1170px; height: 370px;"></div>
 											</div>
 										</div>
@@ -149,13 +149,13 @@
 									<div class="camera_target_content">
 										<div class="cameraContents">
 											<div class="cameraContent" id="carruselEnlace1" style="display: block;"><!--Nueva tienda digital-->
-												<a class="camera_link" href="/tienda.php" target="_parent"></a>
+												<a class="camera_link" href="tienda.php" target="_parent"></a>
 											</div>
 											<div class="cameraContent" id="carruselEnlace2" style="display: none;"><!--La gamba-->
-												<a class="camera_link" href="/presentacion.php#gamba" target="_parent"></a>
+												<a class="camera_link" href="presentacion.php#gamba" target="_parent"></a>
 											</div>
 											<div class="cameraContent" id="carruselEnlace3" style="display: none;"><!--Reportaje fotográfico-->
-												<a class="camera_link" href="/reportaje.php#fotos" target="_parent"></a>
+												<a class="camera_link" href="reportaje.php#fotos" target="_parent"></a>
 											</div>
 										</div>
 									</div>
@@ -173,14 +173,14 @@
 							</div>
 							<div style="clear:both;"></div>
 							<!-- Carrusel END -->
-							
+
 						</div>
 						<div class="moduletable banner2">
 							<div class="banner_block" id="banner_box">
-								<ul>		
+								<ul>
 									<li class="items1" style="width:390px; height:166px;">
-										<a href="http://localhost/presentacion.php#gamba" target="_self" title="Presentación">
-											<img class="banner_img" src="/img/banner1.jpg">
+										<a href="presentacion.php#gamba" target="_self" title="Presentación">
+											<img class="banner_img" src="img/banner1.jpg">
 											<span>
 												<div class="title">Gamba</div>
 												<div class="desc">La autenta e inigualable gamba de Huelva.</div>
@@ -189,16 +189,16 @@
 										</a>
 									</li>
 									<li class="items2" style="width:391px; height:166px;">
-										<a href="http://localhost/presentacion.php#calidad" target="_self" title="Trazabilidad">
-											<img class="banner_img" src="/img/banner2.jpg">
+										<a href="presentacion.php#calidad" target="_self" title="Trazabilidad">
+											<img class="banner_img" src="img/banner2.jpg">
 											<span><div class="title">Calidad</div>
 											<div class="desc">Producto de calidad, autenticidad onubense.</div>
 											<div class="btn">Más Info!</div></span>
 										</a>
 									</li>
 									<li class="items3" style="width:389px; height:166px;">
-										<a href="http://localhost/faqs.php#contacto" target="_self" title="Contacto">
-											<img class="banner_img" src="/img/banner3.jpg">
+										<a href="faqs.php#contacto" target="_self" title="Contacto">
+											<img class="banner_img" src="img/banner3.jpg">
 											<span><div class="title">Más<span>info</span></div>
 											<div class="desc">¿Necesitas ayuda? Contacto por correo o llamada telefónica.</div>
 											<div class="btn">Más Info!</div></span>
@@ -209,10 +209,10 @@
 						</div>
 					</div>
 					<div class="wrapper2">
-						<div id="container-box" class="container span12"> 
+						<div id="container-box" class="container span12">
 							<div class="error err-space">
 								<div id="system-message-container"></div>
-							</div> 
+							</div>
 						 	<div class="module new">
 								<h3><span><span>Productos Destacados</span></span></h3>
 								<div class="boxIndent">
@@ -229,14 +229,14 @@
 																<div class="product-box spacer ">
 																	<div class="browseImage">
 																		<div class="new"></div>
-																		<a href="/producto.php?id='.$id.'" class="img2">
-																			<img src="/img/productos/'.$id.'D.jpg" alt="'.$catalogo[$id]["nombre"].'" class="browseProductImage featuredProductImage" border="0">
+																		<a href="producto.php?id='.$id.'" class="img2">
+																			<img src="img/productos/'.$id.'D.jpg" alt="'.$catalogo[$id]["nombre"].'" class="browseProductImage featuredProductImage" border="0">
 																		</a>
 																	</div>
 																	<div class="fleft">
 																		<div class="Title">
 																			<span class="count">01.</span>
-																			<a href="/producto.php?id='.$id.'" title="'.$catalogo[$id]["nombre"].'">'.$catalogo[$id]["nombre"].'</a>
+																			<a href="producto.php?id='.$id.'" title="'.$catalogo[$id]["nombre"].'">'.$catalogo[$id]["nombre"].'</a>
 																		</div>
 																		<div class="description">
 																			<p>'.$catalogo[$id]["descripcion"].'</p>
@@ -252,7 +252,7 @@
 																					<div class="addtocart-bar2">
 																						<div class="addtocart_button" style="display: block;">
 																							<i></i>
-																							<input type="submit" value="Añadir al carro" style="display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
+																							<input type="submit" value="Añadir al carro" style="display: block;    background: url(img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
 																							<span>&nbsp;</span>
 																						</div>
 																					</div>
@@ -278,7 +278,7 @@
 						</div>
 						<div class="clear"></div>
 					</div>
-				
+
 				</div>
 				<div class="clear"></div>
 			</div>

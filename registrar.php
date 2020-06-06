@@ -11,7 +11,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -20,7 +20,7 @@
 				document.getElementById("login_pop").style.display="none";
 			}
 		</script>
-		
+
 	</head>
 	<body style="position: relative; min-height: 100%; top: 0px;">
 		<div class="body-top">
@@ -38,7 +38,7 @@
 										<h3><span><span>Iniciar sesión</span></span></h3>
 										<div class="boxIndent">
 											<div class="wrapper2">
-												<form action="/registrar.php?mod=true" method="post" id="login-form">
+												<form action="registrar.php?mod=true" method="post" id="login-form">
 													<p id="form-login-username">
 														<label for="modlgn-username">Usuario</label>
 														<input id="modlgn-username" style="height: 35px;" type="text" name="email" class="inputbox" size="18" value="" onblur="" onfocus="">
@@ -53,7 +53,7 @@
 															<input id="modlgn-remember" type="checkbox" name="recordar" class="inputbox" value="yes">
 															<label for="modlgn-remember">Recordarme</label>
 														</p>
-														<input type="hidden" name="cfbede3592a57b1daf67b21053bd3404" value="1"> 
+														<input type="hidden" name="cfbede3592a57b1daf67b21053bd3404" value="1">
 														<div class="clear"></div>
 													</div>
 												</form>
@@ -93,7 +93,7 @@
 								<div class="cart-view">
 									<h3>Formulario de registro</h3>
 									<div class="billing-box">
-										<form method="post" id="adminForm" name="userForm" action="/registrar.php?create=true" class="form-validate">
+										<form method="post" id="adminForm" name="userForm" action="registrar.php?create=true" class="form-validate">
 											<fieldset>
 												<span class="userfields_info">Información del comprador</span>
 											</fieldset>

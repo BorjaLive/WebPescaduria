@@ -14,7 +14,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -33,7 +33,7 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
 						<div id="left" style="width: 450px;" class="span3">
 							<div class="wrapper2">
@@ -100,7 +100,7 @@
 						</div>
 					</div>
 					<div class="wrapper2">
-						<div id="container-box" class="container span12" style="width:50%;"> 
+						<div id="container-box" class="container span12" style="width:50%;">
 						<h3 id="error" style="color:red;display:<?php echo $userData["estado"]==3?"block":"none";?>;">Tu cuenta ha sido cancelada. No puedes realizar comopras.</h3>
 							<div class="content-indent">
 								<div class="item-page">
@@ -129,7 +129,7 @@
 										<input type="submit" value="Modificar" style="display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
 									</form>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="clear"></div>

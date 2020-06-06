@@ -11,7 +11,7 @@
 	}
 	$direccion = divideDireccion($factura["direccion"]);
 	$productos = dividePedido($factura["producto"]);
-	
+
 ?>
 <html>
 	<head>

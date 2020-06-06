@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -28,7 +28,7 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
 						<div id="left" class="span3">
 							<div class="wrapper2">
@@ -38,7 +38,7 @@
 											<h1 style="margin-bottom: 20px;">Categorías</h1>
 											<?php
 												$categorias = getAllCategorias();
-												for($key = 0; $key < sizeof($categorias); $key++) { 
+												for($key = 0; $key < sizeof($categorias); $key++) {
 													echo '
 														<div class="row" style="padding-top:10px;">
 															<div class="category floatleft vertical-separator">
@@ -129,7 +129,7 @@
 										</div>
 									</div>
 								</div>
-									
+
 								<div class="featured-view">
 									<h1>Productos destacados</h1>
 									<div class="browse-view front">

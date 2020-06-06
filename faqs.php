@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -28,9 +28,9 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
-						<div id="container-box" class="container span12"> 
+						<div id="container-box" class="container span12">
 							<div class="content-indent">
 								<div class="item-page">
 									<h2>Preguntas frecuentes</h2>
@@ -70,12 +70,12 @@
 									<p><span style="font-family: %value; font-size: 18;">IBAN: </span></p>
 									<p><span style="font-family: %value; font-size: 18;">otras cosas que puedan ser necesarias</span></p>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="clear"></div>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="clear"></div>

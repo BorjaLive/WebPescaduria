@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -45,7 +45,7 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
 						<div id="left" class="span3">
 							<div class="wrapper2">
@@ -55,7 +55,7 @@
 											<h1 style="margin-bottom: 20px;">Categorías</h1>
 											<?php
 												$categorias = getAllCategorias();
-												for($key = 0; $key < sizeof($categorias); $key++) { 
+												for($key = 0; $key < sizeof($categorias); $key++) {
 													echo '
 														<div class="row" style="padding-top:10px;">
 															<div class="category floatleft vertical-separator">
@@ -114,7 +114,7 @@
 																	Precio de venta:
 																	<span class="PricesalesPrice"><?php
 																		if($descuento != null){
-																			echo '<span style="color: #ba1f3b;font: 24px/26px Arial,Helvetica,sans-serif; text-decoration:line-through" class="PricetaxAmount">'.($data["precio"]*1.1).'%</span> 
+																			echo '<span style="color: #ba1f3b;font: 24px/26px Arial,Helvetica,sans-serif; text-decoration:line-through" class="PricetaxAmount">'.($data["precio"]*1.1).'%</span>
 																				<span style="color: #3bba1f;font: 28px/30px Arial,Helvetica,sans-serif;" class="PricetaxAmount">'.($data["precio"]*(1-($descuento["descuento"]/100))*1.1).'%</span>';
 																		}else{
 																			echo $data["precio"]*1.1;
@@ -169,7 +169,7 @@
 														</div>
 														<div class="addtocart-bar2">
 															<div class="wrapper2">
-																<div class="controls">					
+																<div class="controls">
 																	<span class="quantity-box">
 																		<span class="product-field-desc">Cantidad</span>
 																		<input type="text" class="quantity-input js-recalculate" name="cantidad" value="1">Kg
@@ -198,7 +198,7 @@
 										<a href="https://twitter.com/intent/tweet?screen_name=TwitterDev&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">[TEXTO]</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 									</div>
 								</div>
-							</div> 
+							</div>
 							<div class="clear"></div>
 							<div class="product-neighbours">
 								<div class="clear"></div>

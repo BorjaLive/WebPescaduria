@@ -14,7 +14,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -23,7 +23,7 @@
 				document.getElementById("login_pop").style.display="none";
 			}
 			function OpenPedido(id){
-				window.location.href = "/parts/factura.php?id="+id;
+				window.location.href = "parts/factura.php?id="+id;
 			}
 		</script>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
@@ -36,7 +36,7 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
 						<div id="left" style="width: 450px;" class="span3">
 							<div class="wrapper2">
@@ -126,17 +126,17 @@
 						</div>
 					</div>
 					<div class="wrapper2">
-						
+
 						<div class="cart-view" style="width: 58%">
 								<h3 style="margin-left: 25px;"><span><span>Información del pedido</span></span></h3>
 								<div class="billing-box">
 								<font style="font: normal 18px/24px Arial, Helvetica, sans-serif;">Estado: <?php echo $estadoDra.$segimientoDra;?></font>
 								<?php
 									if($pedidoData["estado"] != 1){
-										echo '<br><form method="post" action="/parts/factura.php?id='.$pedidoData["ID"].'" target=_blank"><button style=" display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);">Ver factura</button></form>';
+										echo '<br><form method="post" action="parts/factura.php?id='.$pedidoData["ID"].'" target=_blank"><button style=" display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);">Ver factura</button></form>';
 									}
 								?>
-								
+
 									<div class="billto-shipto">
 										<div class="width50 floatleft">
 											<h1><span class="vmicon vm2-billto-icon"></span>Datos de facturación</h1>
@@ -182,12 +182,12 @@
 												<br class="clear">
 												<div class="clear"></div>
 											</div>
-											<!--<a class="details" href="/usuario.php#envio">Cambiar la dirección de envio</a>-->
+											<!--<a class="details" href="usuario.php#envio">Cambiar la dirección de envio</a>-->
 										</div>
 									</div>
 								</div>
 							</div>
-							
+
 							<div id="cesta" class="cart-view" style="width:58%;">
 								<h3 style="margin-left: 25px;"><span><span>Elementos en el pedido <font id="cambios" color="#FF0000"></font></span></span></h3>
 								<div class="billing-box">
@@ -237,8 +237,8 @@
 														echo '
 															<tr valign="top" class="sectiontableentry1">
 																<td align="center">
-																	<span class="cart-images"><a href="producto.php?id='.$productos[$key]["id"].'"><img src="/img/productos/'.$productos[$key]["id"].'D.jpg" alt="'.$productoData["nombre"].'"></a></span>
-																	<span class="cart-title"><a href="producto.php?id='.$productos[$key]["id"].'">'.$productoData["nombre"].'</a></span>					
+																	<span class="cart-images"><a href="producto.php?id='.$productos[$key]["id"].'"><img src="img/productos/'.$productos[$key]["id"].'D.jpg" alt="'.$productoData["nombre"].'"></a></span>
+																	<span class="cart-title"><a href="producto.php?id='.$productos[$key]["id"].'">'.$productoData["nombre"].'</a></span>
 																	<br><spam style="color: #ba1f3b;font: 15px/17px Arial,Helvetica,sans-serif;">'.($precio=="??"?"[PRECIO NO DEFINIDO]":"").'</spam>
 																</td>
 																<td align="center">
@@ -265,10 +265,10 @@
 															$envioDra = "*".number_format($pedidoData["envio"],2);
 															$envio = $pedidoData["envio"];
 														}
-														
+
 													}
 											?>
-											
+
 											</form>
 											<tr class="pad"><td></td></tr>
 											<tr class="sectiontableentry1 bg-top">
@@ -280,7 +280,7 @@
 											<tr class="pad"><td></td></tr>
 											<tr class="sectiontableentry1 bg-top">
 												<td colspan="4" align="center">
-													<span class="vmCartPaymentLogo"><img align="middle" src="http://www.lagambadehuelva.com/images/stories/virtuemart/shipment/logomrw.jpg" alt="logomrw"></span>
+													<span class="vmCartPaymentLogo"><img align="middle" src="img/logomrw.jpg" alt="logomrw"></span>
 													<span class="vmshipment_description">Entrega en 24/48 horas. <a href="faq.php#envio">Excepciones</a></span><br>
 												</td>
 												<td align="center"><span class="priceColor2"></span></td>
@@ -303,8 +303,8 @@
 										<textarea class="customer-comment" name="comentario" cols="60" rows="1" readonly><?php echo $pedidoData["anotaciones"];?></textarea>
 									</div>
 							</div>
-						</div>	
-						
+						</div>
+
 						<div class="clear"></div>
 					</div>
 					<div class="clear"></div>

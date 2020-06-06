@@ -5,7 +5,7 @@
 	<head>
 		<title>[Nombre de Empresa]</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<link rel="stylesheet" href="css/stylefactura.css" type="text/css" />
 		<style>
 			table{

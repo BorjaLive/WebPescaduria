@@ -14,7 +14,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -48,7 +48,7 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
 						<div id="left" class="span3">
 							<div class="wrapper2">
@@ -60,7 +60,7 @@
 												$categorias = getAllCategorias();
 												$userData = getAllUserData($_COOKIE["gambasUsario"]);
 												$userDireccion = divideDireccion($userData["direccion"]);
-												for($key = 0; $key < sizeof($categorias); $key++) { 
+												for($key = 0; $key < sizeof($categorias); $key++) {
 													echo '
 														<div class="row" style="padding-top:10px;">
 															<div class="category floatleft vertical-separator">
@@ -83,8 +83,8 @@
 							</div>
 						</div>
 					</div>
-					
-					
+
+
 					<div id="container-box" class="container span9">
 						<div class="content-indent">
 							<div class="cart-view">
@@ -111,7 +111,7 @@
 												<br class="clear">
 												<div class="clear"></div>
 											</div>
-											<a class="details" href="/usuario.php#datos">Cambiar información de facturación</a>
+											<a class="details" href="usuario.php#datos">Cambiar información de facturación</a>
 										</div>
 										<div class="width50 floatleft">
 											<h1><span class="vmicon vm2-billto-icon"></span>Dirección de envio</h1>
@@ -136,7 +136,7 @@
 												<br class="clear">
 												<div class="clear"></div>
 											</div>
-											<a class="details" href="/usuario.php#envio">Cambiar la dirección de envio</a>
+											<a class="details" href="usuario.php#envio">Cambiar la dirección de envio</a>
 										</div>
 										<div class="clear"></div>
 									</div>
@@ -201,8 +201,8 @@
 														echo '
 															<tr valign="top" class="sectiontableentry1">
 																<td align="center">
-																	<span class="cart-images"><a href="producto.php?id='.$productos[$key]["id"].'"><img src="/img/productos/'.$productos[$key]["id"].'D.jpg" alt="'.$productoData["nombre"].'"></a></span>
-																	<span class="cart-title"><a href="producto.php?id='.$productos[$key]["id"].'">'.$productoData["nombre"].'</a></span>					
+																	<span class="cart-images"><a href="producto.php?id='.$productos[$key]["id"].'"><img src="img/productos/'.$productos[$key]["id"].'D.jpg" alt="'.$productoData["nombre"].'"></a></span>
+																	<span class="cart-title"><a href="producto.php?id='.$productos[$key]["id"].'">'.$productoData["nombre"].'</a></span>
 																	<br><spam style="color: #ba1f3b;font: 15px/17px Arial,Helvetica,sans-serif;">'.($precio=="??"?"[SIN EXISTENCIAS]":"").'</spam>
 																</td>
 																<td align="center">
@@ -232,7 +232,7 @@
 													$envio = 0;
 												}
 											?>
-											
+
 											</form>
 											<tr class="pad"><td></td></tr>
 											<tr class="sectiontableentry1 bg-top">
@@ -244,7 +244,7 @@
 											<tr class="pad"><td></td></tr>
 											<tr class="sectiontableentry1 bg-top">
 												<td colspan="4" align="center">
-													<span class="vmCartPaymentLogo"><img align="middle" src="http://www.lagambadehuelva.com/images/stories/virtuemart/shipment/logomrw.jpg" alt="logomrw"></span>
+													<span class="vmCartPaymentLogo"><img align="middle" src="img/logomrw.jpg" alt="logomrw"></span>
 													<span class="vmshipment_description">Entrega en 24/48 horas. <a href="faq.php#envio">Excepciones</a></span><br>
 												</td>
 												<td align="center"><span class="priceColor2"></span></td>
@@ -272,7 +272,7 @@
 									</div>
 								</form>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 				<div class="clear"></div>
@@ -286,7 +286,7 @@
 				foreach( $productos as $key => $value ) {
 					echo ($primera?"":",").'"'.$productos[$key]["cantidad"].'"';
 					$primera = false;
-				} 
+				}
 			?>
 			];
 			var cocidos = [
@@ -295,7 +295,7 @@
 				foreach( $productos as $key => $value ) {
 					echo ($primera?"":",").'"'.$productos[$key]["cocido"].'"';
 					$primera = false;
-				} 
+				}
 			?>
 			];
 			for(var i = 0; i < cocidos.length; i++){

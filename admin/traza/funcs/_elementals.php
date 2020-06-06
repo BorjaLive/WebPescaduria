@@ -36,7 +36,7 @@
 		$link->close();
 		return $clientes;
 	}
-	
+
 	function crearProveedor($nombre, $barcos){
 		$link = _conn();
 		$link->query("INSERT INTO `proveedores` (`Nombre`, `Barcos`) VALUES ('".$nombre."', '".$barcos."')");
@@ -72,7 +72,7 @@
 		$link->close();
 		return $proveedores;
 	}
-	
+
 	function crearEntrada($id, $fecha, $genero, $kg, $escandallo, $proveedor, $barco, $marea, $envase, $etiquetado, $caducidad, $aspecto, $temperatura, $restante = -1){
 		$link = _conn();
 		$link->query("INSERT INTO `entradas` (`ID`, `Fecha`, `Genero`, `Kg`, `Escandallo`, `Proveedor`, `Barco`, `Marea`, `Envase`, `Etiquetado`, `Caducidad`, `Aspecto`, `Temperatura`, `Restante`) VALUES ('".$id."', '".$fecha."', '".$genero."', '".$kg."', '".$escandallo."', '".$proveedor."', '".$barco."', '".$marea."', '".$envase."', '".$etiquetado."', '".$caducidad."', '".$aspecto."', '".$temperatura."', '".($restante==-1?$kg:$restante)."');");
@@ -111,7 +111,7 @@
 		$link->close();
 		return $entradas;
 	}
-	
+
 	function crearFactura($id, $fecha, $nombre, $direccion, $poblacion, $dni, $productos, $suma, $iva, $re, $total){
 		$link = _conn();
 		$link->query("INSERT INTO `facturas` (`ID`, `Fecha`, `Nombre`, `Direccion`, `Poblacion`, `DNI`, `Productos`, `Suma`, `IVA`, `RE`, `Total`) VALUES ('".$id."', '".$fecha."', '".$nombre."', '".$direccion."', '".$poblacion."', '".$dni."', '".$productos."', '".$suma."', '".$iva."', '".$re."', '".$total."');");
@@ -135,6 +135,7 @@
 		$link = _conn();
 		$result = $link->query("SELECT * FROM `facturas`");
 		$actual = 0;
+		$facturas = Array();
 		while($row = $result->fetch_assoc()){
 			if($pagina != 0 and $actual == $pagina*$ElementosPorPagina ){
 				break;
@@ -147,7 +148,7 @@
 		$link->close();
 		return $facturas;
 	}
-	
+
 	function creaSalida($entrada, $fecha, $genero, $escandallo, $kg, $proveedor, $barco, $marea, $id, $envase, $etiquetado, $caducidad, $aspecto, $temperatura){
 		$link = _conn();
 		$link->query("INSERT INTO `salidas` (`Entrada`, `Fecha`, `Genero`, `Escandallo`, `Kg`, `Proveedor`, `Barco`, `Marea`, `ID`, `Envase`, `Etiquetado`, `Caducidad`, `Aspecto`, `Temperatura`) VALUES ('".$entrada."', '".$fecha."', '".$genero."', '".$escandallo."', '".$kg."', '".$proveedor."', '".$barco."', '".$marea."', '".$id."', '".$envase."', '".$etiquetado."', '".$caducidad."', '".$aspecto."', '".$temperatura."');");
@@ -171,6 +172,7 @@
 		$link = _conn();
 		$result = $link->query("SELECT * FROM `salidas`");
 		$actual = 0;
+		$salidas = Array();
 		while($row = $result->fetch_assoc()){
 			if($pagina != 0 and $actual == $pagina*$ElementosPorPagina ){
 				break;

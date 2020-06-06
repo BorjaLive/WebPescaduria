@@ -47,9 +47,9 @@
 				<td><a href="CrearProveedor.php">Crear un nuevo proveedor</a></td>
 			</tr>
 		</table>
-		
-		<input type="button" value="Ir a tienda online" style="font-size: 18px;margin:auto;display:block;" onclick="window.location.replace('http://localhost/admin/');" /><br>
-		
+
+		<input type="button" value="Ir a tienda online" style="font-size: 18px;margin:auto;display:block;" onclick="window.location.replace('../');" /><br>
+
 		<input type="button" value="Cerrar sesion" onclick="cerar_sesion();" />
 	</body>
 </html>

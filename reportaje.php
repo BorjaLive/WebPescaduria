@@ -9,7 +9,7 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/styleshell.css" type="text/css" />
-		<script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+		<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
 		<script>
 			function boton_mostrarLogin(){
 				document.getElementById("login_pop").style.display="block";
@@ -36,9 +36,9 @@
 			<div class="clear"></div>
 			<div class="content" style="padding: 30px 0 50px 0;    z-index: 1;    position: relative;    background: none;">
 				<div class="main">
-					
+
 					<div class="wrapper2">
-						<div id="container-box" class="container span12"> 
+						<div id="container-box" class="container span12">
 							<div class="content-indent">
 								<div style="text-align: center;" class="item-page">
 									<h2 id="fotos">Fotografías</h2>
@@ -47,7 +47,7 @@
 									<p><span style="font-family: %value; font-size: 20;">Línea</span></p>
 									<div class="browseProductImageContainer" style="display: inline-block;background: #f6f6f6;    border: 1px solid #ededed;    height: auto;    padding: 20px 0;    text-align: center;    width: 900px;    border-radius: 12px;">
 										<a href="" rel="" class="img-scr" style="display: inline-block;    height: auto;    width: auto;">
-											<img src="/img/testBig.jpg" alt="fotografía" class="browseProductImage" border="0" title="Auténtica Gamba Blanca de la Costa" style="background: none;    height: auto;    width: 850px;">
+											<img src="img/testBig.jpg" alt="fotografía" class="browseProductImage" border="0" title="Auténtica Gamba Blanca de la Costa" style="background: none;    height: auto;    width: 850px;">
 										<br>Las instalaciones</a>
 									</div>
 									<p><span style="font-family: %value; font-size: 20;">Línea</span></p>
@@ -62,12 +62,12 @@
 									</div>
 									<p><span style="font-family: %value; font-size: 20;">Línea</span></p>
 								</div>
-								
+
 							</div>
 						</div>
 						<div class="clear"></div>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="clear"></div>

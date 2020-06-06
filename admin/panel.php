@@ -37,10 +37,10 @@
 				<td><a href="panel_edicionMasiva.php">Actualizar precios y existencias</a></td>
 			</tr>
 		</table>
-		
-		<input type="button" value="Ir a trazabilidad y facturación" style="font-size: 18px;margin:auto;display:block;" onclick="window.location.replace('http://localhost/admin/traza/');" /><br>
-		
-		
+
+		<input type="button" value="Ir a trazabilidad y facturación" style="font-size: 18px;margin:auto;display:block;" onclick="window.location.replace('traza/');" /><br>
+
+
 		<input type="button" value="Cerrar sesion" onclick="cerar_sesion();" />
 	</body>
 </html>
