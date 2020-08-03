@@ -114,7 +114,7 @@
 										<p><span style="font-family: %value; font-size: medium;">Dirección 2 (Número, piso, puerta): </span><input name="direccion2" value="<?php echo $direccion["direccion2"]; ?>"></p>
 										<input type="hidden" name="mod" value="1">
 										<input type="hidden" name="destino" value="usuario.php">
-										<input type="submit" value="Modificar" style="display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
+										<input type="submit" value="Modificar" style="display: block;    background: url(img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
 									</form>
 									<h2 id="datos">Datos personales</h2>
 									<form method="post" action="usuario.php?usr=1">
@@ -126,7 +126,7 @@
 										<p><span style="font-family: %value; font-size: medium;">DNI: </span><input name="dni" value="<?php echo $userData["dni"]; ?>"></p>
 										<input type="hidden" name="mod" value="2">
 										<input type="hidden" name="destino" value="usuario.php">
-										<input type="submit" value="Modificar" style="display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
+										<input type="submit" value="Modificar" style="display: block;    background: url(img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
 									</form>
 								</div>
 

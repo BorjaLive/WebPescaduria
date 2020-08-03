@@ -133,7 +133,7 @@
 								<font style="font: normal 18px/24px Arial, Helvetica, sans-serif;">Estado: <?php echo $estadoDra.$segimientoDra;?></font>
 								<?php
 									if($pedidoData["estado"] != 1){
-										echo '<br><form method="post" action="parts/factura.php?id='.$pedidoData["ID"].'" target=_blank"><button style=" display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);">Ver factura</button></form>';
+										echo '<br><form method="post" action="parts/factura.php?id='.$pedidoData["ID"].'" target=_blank"><button style=" display: block;    background: url(img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: '."'Roboto'".', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);">Ver factura</button></form>';
 									}
 								?>
 

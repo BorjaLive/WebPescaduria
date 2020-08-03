@@ -268,7 +268,7 @@
 										<textarea class="customer-comment" name="comentario" cols="60" rows="1" placeholder="<?php echo $pagadorium?"Es aconsejable que detalles el precio máximo que estas dispuesto a pagar por los artículos que no se encuentran disponibles.":"¿Tienes alguna necesidad especial?"; ?>"></textarea>
 									</div>
 									<div class="checkout-button-top" style="visibility: visible; display: block;">
-										<input type="submit" value="Comprar" style="margin-left: 150px; display: block;    background: url(/img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
+										<input type="submit" value="Comprar" style="margin-left: 150px; display: block;    background: url(img/btn.gif) left top repeat-x;    border: none;    font: 400 18px/30px Arial, Helvetica, sans-serif;    font-family: 'Roboto', sans-serif;    padding: 0 10 0 10px;    text-transform: none;    border-radius: 0px!important;    color: #fff;    text-align: center;    text-decoration: none;    letter-spacing: 0;    cursor: pointer;    box-shadow: 0 3px 4px rgba(0,0,0,0.4);" title="DR_VIRTUEMART_SELECT_OPTION" class="addtocart-button hasTooltip">
 									</div>
 								</form>
 							</div>
