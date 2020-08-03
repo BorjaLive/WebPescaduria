@@ -101,7 +101,7 @@ ul, menu, dir {
 }
 .cart {
     position: absolute;
-    background: url(/img/cart_bg.png) left top no-repeat;
+    background: url(../img/cart_bg.png) left top no-repeat;
     top: 68px;
     right: 0px;
     width: 192px;
@@ -152,7 +152,7 @@ a.flag {
     font-size: 16px;
     padding: 1px 0;
     background-repeat: no-repeat;
-    background-image: url(/img/16a.png);
+    background-image: url(../img/16a.png);
 }
 a.flag img {
     border: 0;
@@ -238,7 +238,7 @@ li {
 
 #content .content-indent .browse-view .spacer .col-2 .addtocart-area .addtocart-bar2 span.addtocart-button .addtocart-button, .addtocart-area .addtocart-bar2 span.addtocart-button .addtocart-button, #content a.addtocart-button {
     display: block;
-    background: url(/img/btn.gif) left top repeat-x;
+    background: url(../img/btn.gif) left top repeat-x;
     border: none;
     font: 400 13px/32px Arial, Helvetica, sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -258,23 +258,3 @@ li {
 	font: normal 16px/24px Arial, Helvetica, sans-serif !important;
     padding-bottom: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
