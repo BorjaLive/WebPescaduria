@@ -184,7 +184,7 @@
 											<span>
 												<div class="title">Gamba</div>
 												<div class="desc">La autenta e inigualable gamba de Huelva.</div>
-												<div class="btn">Más Info!</div>
+												<div class="btn" style="color:white;">Más Info!</div>
 											</span>
 										</a>
 									</li>
@@ -193,7 +193,7 @@
 											<img class="banner_img" src="img/banner2.jpg">
 											<span><div class="title">Calidad</div>
 											<div class="desc">Producto de calidad, autenticidad onubense.</div>
-											<div class="btn">Más Info!</div></span>
+											<div class="btn" style="color:white;">Más Info!</div></span>
 										</a>
 									</li>
 									<li class="items3" style="width:389px; height:166px;">
@@ -201,7 +201,7 @@
 											<img class="banner_img" src="img/banner3.jpg">
 											<span><div class="title">Más<span>info</span></div>
 											<div class="desc">¿Necesitas ayuda? Contacto por correo o llamada telefónica.</div>
-											<div class="btn">Más Info!</div></span>
+											<div class="btn" style="color:white;">Más Info!</div></span>
 										</a>
 									</li>
 								</ul>
